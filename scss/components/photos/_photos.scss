@@ -1,0 +1,51 @@
+@import "layout/var";
+
+.photos {
+    background: #F5F5F5; 
+    padding: 24px 0 79px;
+
+    &__title {
+        font-size: 48px;
+        line-height: 58px;
+        font-family: $mus700;
+        color: #5E5E5E;
+        margin-bottom: 40px;
+    }
+
+    &__slide {
+        padding: 0 15px;
+    }
+
+    &__image {
+        height: 170px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: calc(100% + 24px);
+        
+        height: 31px;
+        width: 31px;
+        font-size: 0;
+        border: none;
+        outline: none;
+        background-image: url(../img/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-position: top 9px center;
+        background-color: transparent;
+        padding: 0;
+        border-radius: 50%;
+
+        &.slick-prev {
+            right: 40px;
+            transform-origin: center;
+            transform: rotate(180deg);
+        }
+
+        &.slick-next {
+            right: 0;
+        }
+    }
+}

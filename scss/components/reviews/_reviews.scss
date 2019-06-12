@@ -1,0 +1,36 @@
+@import "layout/var";
+
+.reviews {
+    margin-bottom: 40px;
+
+    &__title {
+        font-size: 48px;
+        line-height: 58px;
+        color: #5E5E5E;
+        font-family: $mus700;
+        margin-bottom: 40px;
+    }
+}
+
+.review {
+    margin-bottom: 20px;
+    padding-right: 15px;
+    &__name {
+        font-size: 24px;
+        line-height: 29px;
+        color: #5E5E5E;
+        font-family: $mus700;
+        margin-bottom: 8px;
+    }
+
+    &__stars {
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: justify;
+        color: #000000;
+    }
+}

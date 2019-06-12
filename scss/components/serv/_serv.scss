@@ -1,0 +1,127 @@
+@import "layout/var";
+
+.content {
+    background: #fbfbfb;
+}
+
+.serv {
+    padding: 32px 0;
+
+    &__title {
+        font-size: 48px;
+        line-height: 58px;
+        color: #5E5E5E;
+        font-family: $mus700;
+        margin-bottom: 40px;
+
+    }
+
+    &__cube-1 {
+        position: absolute;
+        width: 222px;
+        height: 232px;
+        top: 0;
+        right: 0;
+        background-image: url(../img/dots.svg);
+    }
+
+    &__cube-2 {
+        position: absolute;
+        width: 222px;
+        height: 232px;
+        top: 480px;
+        left: 0;
+        background-image: url(../img/dots.svg);
+    }
+}
+
+.serv-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+    &__item-wr {
+        padding: 0 15px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        width: 50%;
+    }
+
+    &__item {
+        height: 100%;
+    }
+}
+
+.serv-item {
+    background: #fff;
+    padding: 60px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    min-height: 267px;
+
+    &__title {
+        font-size: 30px;
+        line-height: 36px;
+        color: #5E5E5E;
+        font-family: $mus700;
+        margin-bottom: auto;
+        display: block;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+    }
+
+    &__list-item {
+        margin-right: 22px;
+        font-size: 14px;
+        line-height: 19px;
+        color: #5E5E5E;
+    }
+
+    &__button-wr {
+        transform: translateY(50%);
+    }
+
+    &--image-1 {
+        background-image: url(../img/serv-1.jpg);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    &--image-2 {
+        background-image: url(../img/serv-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    &--image-3 {
+        background-image: url(../img/serv-3.jpg);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    &--image-4 {
+        background-image: url(../img/serv-4.jpg);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    &--image-5 {
+        background-image: url(../img/serv-5.jpg);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    &--image-6 {
+        background-image: url(../img/serv-6.jpg);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+}

@@ -1,0 +1,33 @@
+@import "layout/var";
+
+.movie {
+    margin-bottom: 72px;
+    &__title {
+        font-size: 48px;
+        line-height: 58px;
+        color: #5E5E5E;
+        margin-bottom: 40px;
+    }
+
+    &__frame {
+        position: relative;
+
+        &:before {
+            content: "";
+            display: block;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 80px);
+            background: #F5F5F5;
+        }
+
+        iframe {
+            display: block;
+            height: 490px;
+            width: 100%;
+        }
+    }
+}

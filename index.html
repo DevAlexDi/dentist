@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dentist</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
   
 </head>
@@ -106,8 +108,8 @@
                                 <div class="header-nav__right-side">
                                     <div class="header-nav__call-icon">
                                         <img src="img/white-tel.svg" class="img-responsive" alt="">
-                                        <p class="header-nav__call-text">Записаться на прием</p>
                                     </div>
+                                    <p class="header-nav__call-text">Записаться на прием</p>
                                 </div>
                             </div>
                         </div>
@@ -134,14 +136,210 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="baner-flex__right-side">
-
-                            </div>
+                            <div class="baner-flex__right-side"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="content">
+        <section class="serv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="serv__wrapp">
+                            <h2 class="serv__title">Наши услуги</h2>
+                            <div class="serv__cube-1"></div>
+                            <div class="serv__cube-2"></div>
+                            <div class="serv-list">
+                                <div class="serv-list__item-wr">
+                                    <div class="serv-item serv-list__item serv-item--image-1">
+                                        <a class="serv-item__title" href="#">Терапевтическая стоматология</a>
+                                        <ul class="serv-item__list">
+                                            <li class="serv-item__list-item">Осмотр</li>
+                                            <li class="serv-item__list-item">Рентген зуба</li>
+                                            <li class="serv-item__list-item">Лечение глубокого кариеса</li>
+                                        </ul>
+                                        <div class="button-wr serv-item__button-wr button-wr--right">
+                                            <a href="#" class="button-wr__button-link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="serv-list__item-wr">
+                                    <div class="serv-item serv-list__item serv-item--image-2">
+                                        <a class="serv-item__title" href="#">Хирургическая 
+                                            стоматология</a>
+                                        <ul class="serv-item__list">
+                                            <li class="serv-item__list-item">Вскрытие абсцесса</li>
+                                            <li class="serv-item__list-item">Лечение альвеолита</li>
+                                            <li class="serv-item__list-item">Удаление зуба</li>
+                                        </ul>
+                                        <div class="button-wr serv-item__button-wr button-wr--right">
+                                            <a href="#" class="button-wr__button-link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="serv-list__item-wr">
+                                    <div class="serv-item serv-list__item serv-item--image-3">
+                                        <a class="serv-item__title" href="#">Ортопедическая 
+                                            стоматология</a>
+                                        <ul class="serv-item__list">
+                                            <li class="serv-item__list-item">Несъемное протезирование</li>
+                                            <li class="serv-item__list-item">Съемное протезирование</li>
+                                        </ul>
+                                        <div class="button-wr serv-item__button-wr button-wr--right">
+                                            <a href="#" class="button-wr__button-link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="serv-list__item-wr">
+                                    <div class="serv-item serv-list__item serv-item--image-4">
+                                        <a class="serv-item__title" href="#">Ортодонтическая 
+                                            стоматология</a>
+                                        <ul class="serv-item__list">
+                                            <li class="serv-item__list-item">Адгезор, Унифас, Уницем</li>
+                                            <li class="serv-item__list-item">Витапекс, Метапекс</li>
+                                        </ul>
+                                        <div class="button-wr serv-item__button-wr button-wr--right">
+                                            <a href="#" class="button-wr__button-link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="serv-list__item-wr">
+                                    <div class="serv-item serv-list__item serv-item--image-5">
+                                        <a class="serv-item__title" href="#">Парадонтология</a>
+                                        <ul class="serv-item__list">
+                                            <li class="serv-item__list-item">Несъемное протезирование</li>
+                                            <li class="serv-item__list-item">Съемное протезирование</li>
+                                        </ul>
+                                        <div class="button-wr serv-item__button-wr button-wr--right">
+                                            <a href="#" class="button-wr__button-link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="serv-list__item-wr">
+                                    <div class="serv-item serv-list__item serv-item--image-6">
+                                        <a class="serv-item__title" href="#">Косметическая 
+                                            стоматология</a>
+                                        <ul class="serv-item__list">
+                                            <li class="serv-item__list-item">Адгезор, Унифас, Уницем</li>
+                                            <li class="serv-item__list-item">Витапекс, Метапекс</li>
+                                        </ul>
+                                        <div class="button-wr serv-item__button-wr button-wr--right">
+                                            <a href="#" class="button-wr__button-link">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="movie__title">Видео о нас</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="movie__frame">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <iframe  src="https://www.youtube.com/embed/7Nbv3reNErw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="reviews__title">Отзывы пациентов</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="review">
+                            <p class="review__name">Анна Хворостова</p>
+                            <img src="img/stars.svg" class="img-responsive review__stars" alt="">
+                            <p class="review__text">Большое счастье чувствовать, что что у тебя все хорошо с зубами. Спасибо за это бесценное ощущение спокойствия.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="review">
+                            <p class="review__name">Сергей Ковров</p>
+                            <img src="img/stars.svg" class="img-responsive review__stars" alt="">
+                            <p class="review__text">В кресле Петра Ивановича Андреева чувствуешь себя настолько спокойно, что хочется уснуть.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="review">
+                            <p class="review__name">Наталья Костина</p>
+                            <img src="img/stars.svg" class="img-responsive review__stars" alt="">
+                            <p class="review__text">Нам с мужем сделали белоснежную улыбку к свадьбе. Мы были удивлены результатом. Теперь ходим каждый год на чистку к Анечке.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="photos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="photos__title">
+                            Видео о нас
+                        </h2>
+                        <div class="photos__slider">
+                            <a href="img/img-slider.jpg" data-fancybox="images" class="photos__slide">
+                                <img src="img/img-slider.jpg" class="photos__image img-responsive" alt="">
+                            </a>
+                            <a href="img/img-slider.jpg" data-fancybox="images" class="photos__slide">
+                                <img src="img/img-slider.jpg" class="photos__image img-responsive" alt="">
+                            </a>
+                            <a href="img/img-slider.jpg" data-fancybox="images" class="photos__slide">
+                                <img src="img/img-slider.jpg" class="photos__image img-responsive" alt="">
+                            </a>
+                            <a href="img/img-slider.jpg" data-fancybox="images" class="photos__slide">
+                                <img src="img/img-slider.jpg" class="photos__image img-responsive" alt="">
+                            </a>
+                            <a href="img/img-slider.jpg" data-fancybox="images" class="photos__slide">
+                                <img src="img/img-slider.jpg" class="photos__image img-responsive" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="team__title">Наши специалисты</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="human">
+                            <img src="img/team.jpg" class="human__photo" alt="">
+                            <div class="human__descr">
+                                <p class="human__name">Имя Фамилия</p>
+                                <p class="human__state">Специальность врача*</p>
+                                <div class="button-wr human__link button-wr--right">
+                                    <a href="#" class="button-wr__button-link">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </section>
 
 
@@ -158,8 +356,9 @@
 
 
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/inputmask.js"></script>
     <script type="text/javascript" src="js/jquery.inputmask.js"></script>
