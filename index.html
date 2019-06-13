@@ -45,14 +45,15 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="header-nav">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
                                 <nav class="header-nav__left-side">
                                     <div class="header-nav__un-skew">
-                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
+                                        
                                         <div class="collapse navbar-collapse" id="main-menu">
                                             <ul class="menu-list">
                                                 <li class="menu-list__item">
@@ -74,7 +75,7 @@
                                                             <a class="menu-list__second-lvl-link" href="#">Парадонтология</a>
                                                         </li>
                                                         <li class="menu-list__second-lvl-item">
-                                                            <a class="menu-list__second-lvl-link" href="#">Осметическая стоматология (отбеливание ZOOM)</a>
+                                                            <a class="menu-list__second-lvl-link" href="#">Косметическая стоматология (отбеливание ZOOM)</a>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -105,7 +106,7 @@
                                         </div>
                                     </div>
                                 </nav>
-                                <div class="header-nav__right-side">
+                                <div class="header-nav__right-side modal-request-show">
                                     <div class="header-nav__call-icon">
                                         <img src="img/white-tel.svg" class="img-responsive" alt="">
                                     </div>
@@ -128,7 +129,7 @@
                                 <h2 class="baner-flex__title">Бесплатная консультация и скидка 20% на первую услугу*</h2>
                                 <p class="baner-flex__text">На протяжении 14 лет мы приходим заботимся о здоровье жителей Санкт-Петербурга. Мы собрали коллектив единомышленников, который окружает заботой и решает все вопросы связанные со здоровьем полости рта</p>
                                 <div class="button-wr button-wr--right">
-                                    <button class="button-wr__button">
+                                    <button class="button-wr__button modal-request-show">
                                         <span class="button-wr__button-text">Заказать звонок</span>
                                         <span class="button-wr__button-icon">
                                             <img src="img/butt-icon.svg" alt="" class="img-responsive">
@@ -250,7 +251,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <iframe  src="https://www.youtube.com/embed/7Nbv3reNErw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe src="https://www.youtube.com/embed/DPqIKRfo8f0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -293,7 +294,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="photos__title">
-                            Видео о нас
+                            Фото клиники
                         </h2>
                         <div class="photos__slider">
                             <a href="img/img-slider.jpg" data-fancybox="images" class="photos__slide">
@@ -440,7 +441,7 @@
                                     <a href="mailto:info@stomatologiya-briz.ru" class="map-wr__mail">info@stomatologiya-briz.ru</a>
                                     <div class="button-wr map-wr__button-wr button-wr--right">
                                         <button class="button-wr__button">
-                                            <span class="button-wr__button-text">Заказать звонок</span>
+                                            <span class="button-wr__button-text modal-request-show">Заказать звонок</span>
                                             <span class="button-wr__button-icon">
                                                 <img src="img/butt-icon.svg" alt="" class="img-responsive">
                                             </span>
@@ -501,7 +502,23 @@
         </footer>
 
     </section>
-
+    <div class="modal fade" id="modal-request" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-request">
+                <form class="form-order">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <p class="form-order__title"><span>Заказать звонок</span></p>
+                    <input class="form-order__input form-order__input--name" type="text" placeholder="Ваше имя">
+                    <input class="form-order__input form-order__input--tel tel-inp" type="text" placeholder="Ваш телефон">
+                    <p class="form-order__msg"><!--сюда текст при успешной отправке--></p>
+                    <div class="button-wr form-order__button-wr button-wr--center">
+                        <button class="button-wr__button-link">Заказать звонок</button>
+                    </div>
+                    <p class="form-order__terms">Нажимая кнопу, Вы соглашаетесь с условиями <a href="#" target="_blank">передачи данных</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
 

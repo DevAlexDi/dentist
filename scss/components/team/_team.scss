@@ -9,6 +9,11 @@
         color: #5E5E5E;
         font-family: $mus700;
         margin-bottom: 40px;
+
+        @media (max-width: 767px) {
+            font-size: 32px;
+            line-height: inherit;
+        }
     }
 }
 
@@ -20,6 +25,10 @@
         height: 228px;
         object-fit: cover;
         width: 100%;
+
+        @media (max-width: 767px) {
+            height: 200px;
+        }
     }
 
     &__descr {

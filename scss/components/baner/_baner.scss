@@ -18,6 +18,11 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 767px) {
+        min-height: auto;
+        padding: 220px 0 30px 0;
+    }
+
     &__left-side {
         max-width: 682px;
         position: relative;
@@ -29,6 +34,10 @@
 
         @media (max-width: 991px) { 
             max-width: 423px;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 100%;
         }
     }
 
@@ -51,6 +60,10 @@
         text-align: justify;
         margin-bottom: 50px;
         color: #777777;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
     }
 
     &__right-side {
@@ -69,6 +82,11 @@
         @media (max-width: 991px) {
             left: 200px;
         }
+
+        @media (max-width: 767px) {
+            display: none;
+            background-image: none;
+        }
     }
 }
 
@@ -77,6 +95,15 @@
 
     &--right {
         justify-content: flex-end;
+
+        @media (max-width: 767px) {
+            justify-content: center;
+        }
+    }
+
+
+    &--center {
+        justify-content: center;
     }
 
     &__button {
@@ -124,6 +151,11 @@
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
         border-radius: 100px;
         color: #fff;
+        border: none;
+
+        @media (max-width: 767px) {
+            min-width: 200px;
+        }
 
         &:hover {
             background: #A7D4CF;

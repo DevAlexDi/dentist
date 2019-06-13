@@ -3,12 +3,21 @@
 .movie {
     margin-bottom: 72px;
 
+    @media (max-width: 767px) {
+        margin-bottom: 50px;
+    }
+
     &__title {
         font-size: 48px;
         line-height: 58px;
         color: #5E5E5E;
         margin-bottom: 40px;
         font-family: $mus700;
+
+        @media (max-width: 767px) {
+            font-size: 32px;
+            line-height: inherit;
+        }
     }
 
     &__frame {
@@ -30,6 +39,10 @@
             display: block;
             height: 490px;
             width: 100%;
+
+            @media (max-width: 767px) {
+                height: 280px;
+            }
         }
     }
 }

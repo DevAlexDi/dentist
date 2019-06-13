@@ -2,11 +2,21 @@
 
 .contacts {
     margin-bottom: 40px;
+    @media (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+    
     &__title {
         font-size: 48px;
         line-height: 58px;
         color: #5E5E5E;
         margin-bottom: 40px;
+        font-family: $mus700;
+
+        @media (max-width: 767px) {
+            font-size: 32px;
+            line-height: inherit;
+        }
     }
 }
 
@@ -38,14 +48,14 @@
             }
 
             @media (max-width: 767px) {
-                height: 320px;
+                height: 240px;
             }
         }
     }
 
     &__info {
         position: absolute;
-        z-index: 800;
+        z-index: 80;
         top: 50%;
         left: 0;
         transform: translateY(-50%);
