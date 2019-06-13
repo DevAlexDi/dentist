@@ -2,11 +2,13 @@
 
 .movie {
     margin-bottom: 72px;
+
     &__title {
         font-size: 48px;
         line-height: 58px;
         color: #5E5E5E;
         margin-bottom: 40px;
+        font-family: $mus700;
     }
 
     &__frame {

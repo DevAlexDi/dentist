@@ -48,10 +48,19 @@
         margin: 0 auto;
         margin-bottom: 40px;
         width: 50%;
+
+        @media (max-width: 991px) {
+            width: 100%;
+            padding: 0;
+        }
     }
 
     &__item {
         height: 100%;
+
+        @media (max-width: 991px) {
+            height: auto;
+        }
     }
 }
 
@@ -62,6 +71,11 @@
     flex-direction: column;
     min-height: 267px;
 
+    @media (max-width: 991px) {
+        min-height: auto;
+        padding: 40px 24px 0 24px;
+    }
+
     &__title {
         font-size: 30px;
         line-height: 36px;
@@ -69,6 +83,10 @@
         font-family: $mus700;
         margin-bottom: auto;
         display: block;
+
+        @media (max-width: 991px) {
+            margin-bottom: 40px;
+        }
     }
 
     &__list {
